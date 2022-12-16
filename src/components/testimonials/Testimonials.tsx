@@ -4,9 +4,11 @@ import {
   RichardProfileImage,
   ShanaiProfileImage,
   AliProfileImage,
+  TabletImage,
 } from "../../assets/images";
 import CtaButton from "../cta/CtaButton";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const Testimonials = () => {
   const [slidingPosition, setSlidingPosition] = useState(1);
@@ -24,7 +26,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="flex flex-col items-center gap-y-10 px-8 py-12">
+    <section className="flex flex-col items-center gap-y-10 px-8 py-12 relative">
       <h1 className="text-darkBlue-default font-bold text-4xl text-center">
         What they’ve said
       </h1>
@@ -97,6 +99,11 @@ const Testimonials = () => {
           />
         </li>
       </ul>
+      <Image
+        src={TabletImage}
+        alt="image of a big tablet"
+        className="absolute -left-1/3 -z-10 -top-1/2 hidden tablet:block"
+      />
       <CtaButton />
     </section>
   );
