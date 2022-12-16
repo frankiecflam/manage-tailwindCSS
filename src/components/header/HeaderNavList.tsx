@@ -2,7 +2,7 @@ import HeaderNavItem from "./HeaderNavItem";
 
 const HeaderNavList = () => {
   return (
-    <ul className="flex flex-1 justify-between items-center gap-x-10 absolute w-screen h-1/2 bg-lightGray mt-20 flex-col py-5 font-medium text-xl mobile:relative mobile:w-auto mobile:h-auto mobile:flex-row mobile:justify-center mobile:mt-0 mobile:bg-transparent mobile:py-0 mobile:font-normal mobile:text-base">
+    <ul className="flex flex-1 justify-between items-center gap-x-10 absolute top-20 left-0 w-screen h-1/2 bg-lightGray flex-col py-5 font-medium text-xl tablet:relative tablet:w-auto tablet:h-auto tablet:top-0 tablet:flex-row tablet:justify-center tablet:mt-0 tablet:bg-transparent tablet:py-0 tablet:font-normal tablet:text-base">
       <HeaderNavItem href="/pricing">pricing</HeaderNavItem>
       <HeaderNavItem href="/products">products</HeaderNavItem>
       <HeaderNavItem href="/about">about us</HeaderNavItem>

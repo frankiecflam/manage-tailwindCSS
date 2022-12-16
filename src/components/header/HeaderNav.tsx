@@ -4,7 +4,7 @@ import HeaderNavActions from "./HeaderNavActions";
 
 const HeaderNav = () => {
   return (
-    <nav className="flex justify-between">
+    <nav className="flex justify-between items-center">
       <HeaderNavBrand />
       <HeaderNavList />
       <HeaderNavActions />
