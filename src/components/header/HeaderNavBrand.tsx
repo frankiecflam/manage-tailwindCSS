@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const HeaderNavBrand = () => {
   return (
-    <div className="relative">
+    <div className="relative w-20">
       <Link href="/">
         <Image src={LogoImage} alt="Company's Logo" />
       </Link>

@@ -8,7 +8,7 @@ interface HeaderNavItemProps {
 
 const HeaderNavItem = ({ children, href }: HeaderNavItemProps) => {
   return (
-    <li className="capitalize">
+    <li className="capitalize text-center">
       <Link href={href} className="text-darkBlue-default">
         {children}
       </Link>
