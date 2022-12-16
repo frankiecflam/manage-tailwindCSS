@@ -7,6 +7,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      mobile: "375px",
+      desktop: "1440px",
+    },
     extend: {
       fontFamily: {
         sans: ["Be Vietnam Pro", ...defaultTheme.fontFamily.sans],
