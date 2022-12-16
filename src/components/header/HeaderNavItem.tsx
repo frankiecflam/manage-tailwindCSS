@@ -1,7 +1,19 @@
-import React from "react";
+import { ReactNode } from "react";
+import Link from "next/link";
 
-const HeaderNavItem = () => {
-  return <div>HeaderNavItem</div>;
+interface HeaderNavItemProps {
+  children: ReactNode;
+  href: string;
+}
+
+const HeaderNavItem = ({ children, href }: HeaderNavItemProps) => {
+  return (
+    <li className="capitalize">
+      <Link href={href} className="text-darkBlue-default">
+        {children}
+      </Link>
+    </li>
+  );
 };
 
 export default HeaderNavItem;
