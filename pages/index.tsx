@@ -3,6 +3,7 @@ import Header from "../src/components/header/Header";
 import Hero from "../src/components/hero/Hero";
 import About from "../src/components/about/About";
 import Testimonials from "../src/components/testimonials/Testimonials";
+import Cta from "../src/components/cta/Cta";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Hero />
         <About />
         <Testimonials />
+        <Cta />
       </main>
     </>
   );
