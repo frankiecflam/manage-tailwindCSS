@@ -26,7 +26,7 @@ export function FooterSocialItem({
 
 const FooterSocial = () => {
   return (
-    <div className="col-span-4 flex flex-col gap-y-10 items-center">
+    <div className="col-span-4 flex flex-col gap-y-10 items-center justify-between desktop:items-start desktop:-order-1">
       <ul className="flex gap-x-8">
         <FooterSocialItem href="https://www.facebook.com/">
           <Image src={FacebookIcon} alt="" />
@@ -44,7 +44,7 @@ const FooterSocial = () => {
           <Image src={InstagramIcon} alt="" />
         </FooterSocialItem>
       </ul>
-      <Link href="/">
+      <Link href="/" className="desktop:-order-1">
         <Image src={LogoFooterImage} alt="Company's Logo" />
       </Link>
     </div>
