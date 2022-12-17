@@ -32,7 +32,7 @@ const FooterSubscribe = () => {
           type="email"
           value={emailInput}
           onChange={(e) => setEmailInput(e.target.value)}
-          className="py-2 px-6 rounded-full outline-brightRed w-64"
+          className="py-2 px-6 rounded-full outline-brightRed w-4/6"
         />
         <button
           type="submit"
